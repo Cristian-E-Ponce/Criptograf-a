@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografía</title>
+    <link href="../assets/img/logo.jpg" rel="shortcut icon" alt="Logo Unaj">
+    <!-- Link -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="container text-center mt-3">
+        <img src="../assets/img/logo.jpg" id="logo" alt="Logo Unaj" >  
+    </div>
+
+    <div class="container">   
+        <div class="row" >
+
+            <form class="col-12 p-4 row" id="form-main" method="post">
+
+                <div class="col-12">
+                    <div class="form-group p-2">
+                        <label for="text-plano" class="form-label mt-4">Texto Plano</label>
+                        <input type="text" id="text-plano" class="form-control" placeholder="Ingresar Texto Plano" required autofocus>
+                    </div>
+                </div>
+
+                <div class="col-8">
+                    <div class="form-group p-2">
+                        <select class="form-select" id="select-cifrado" required>
+                            <option value="" disabled selected>Seleccionar Cifrado</option>
+                            <option value="sustitucion">Sustitución</option>
+                            <option value="transposicion">Transposición</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="d-grid p-2">
+                        <button  class="btn btn-primary" type="button" onclick="cifrar();">
+                             Aceptar
+                        </button>  
+                    </div>    
+                </div>
+            </form>
+
+            <div class="col-12 p-4 row">
+                <div class="form-group p-2">
+                    <label for="text-cifrado" class="form-label mt-4">Texto Cifrado</label>
+                    <input type="text" id="text-cifrado" class="form-control" disabled>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    
+</body>
+
+</html>
